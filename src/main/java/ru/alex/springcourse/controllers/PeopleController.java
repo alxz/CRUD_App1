@@ -33,8 +33,8 @@ public class PeopleController {
     }
 
     @GetMapping("/new")
-    public String newPerson(Model model) {
-        model.addAttribute("person", new Person());
+    public String newPerson(@ModelAttribute("person") Person person) {
+//        model.addAttribute("person", new Person());
         return "people/new";
     }
 
@@ -44,3 +44,13 @@ public class PeopleController {
         return "redirect:/people";
     }
 }
+
+
+/*
+
+    @GetMapping("/new")
+    public String newPerson(Model model) {
+        model.addAttribute("person", new Person());
+        return "people/new";
+    }
+ */
