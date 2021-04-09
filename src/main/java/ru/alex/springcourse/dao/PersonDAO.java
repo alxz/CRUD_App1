@@ -14,10 +14,10 @@ public class PersonDAO {
     {
         people = new ArrayList<>();
 
-        people.add(new Person(++PEOPLE_COUNT, "Dustin", 12, "dustin@hawkins.com"));
-        people.add(new Person(++PEOPLE_COUNT, "Lucas", 12, "lucas@hawkins.com"));
-        people.add(new Person(++PEOPLE_COUNT, "Mike", 12, "mike@hawkins.comm"));
-        people.add(new Person(++PEOPLE_COUNT, "Will", 12, "will@hawkins.com"));
+        people.add(new Person(++PEOPLE_COUNT, "Dustin Henderson", 12, "dustin@hawkins.com"));
+        people.add(new Person(++PEOPLE_COUNT, "Lucas Sinclair", 12, "lucas@hawkins.com"));
+        people.add(new Person(++PEOPLE_COUNT, "Mike Wheeler", 12, "mike@hawkins.comm"));
+        people.add(new Person(++PEOPLE_COUNT, "Will Byers", 12, "will@hawkins.com"));
     }
 
     public List<Person> index() {
